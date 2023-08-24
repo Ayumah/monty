@@ -64,33 +64,33 @@ char  *clean_line(char *content);
 
 /** ___Functions to handle operations in stacks__ **/
 
-void f_push(stack_t **head, unsigned int number);
-void f_pall(stack_t **head, unsigned int number);
-void f_pint(stack_t **head, unsigned int number);
-void f_nop(stack_t **head, unsigned int counter);
+void *_push(stack_t **head, unsigned int number);
+void *_pall(stack_t **head, unsigned int number);
+void *_pint(stack_t **head, unsigned int number);
+void *_nop(stack_t **head, unsigned int counter);
 int execute(char *content, stack_t **head, unsigned int counter, FILE *file);
 void free_stack(stack_t *head);
-void f_pop(stack_t **head, unsigned int counter);
-void f_swap(stack_t **head, unsigned int counter);
+void *_pop(stack_t **head, unsigned int counter);
+void *_swap(stack_t **head, unsigned int counter);
 
 /** ___Functions to handle mathematical operations in stacks__ **/
-void f_add(stack_t **head, unsigned int counter);
-void f_sub(stack_t **head, unsigned int counter);
-void f_div(stack_t **head, unsigned int counter);
-void f_mul(stack_t **head, unsigned int counter);
-void f_mod(stack_t **head, unsigned int counter);
+void *_add(stack_t **head, unsigned int counter);
+void *_sub(stack_t **head, unsigned int counter);
+void *_div(stack_t **head, unsigned int counter);
+void *_mul(stack_t **head, unsigned int counter);
+void *_mod(stack_t **head, unsigned int counter);
 
-void f_pchar(stack_t **head, unsigned int counter);
-void f_pstr(stack_t **head, unsigned int counter);
+void *_pchar(stack_t **head, unsigned int counter);
+void *_pstr(stack_t **head, unsigned int counter);
 
-void f_rotl(stack_t **head, unsigned int counter);
-void f_rotr(stack_t **head, __attribute__((unused)) unsigned int counter);
+void *_rotl(stack_t **head, unsigned int counter);
+void *_rotr(stack_t **head, __attribute__((unused)) unsigned int counter);
 
 void addnode(stack_t **head, int n);
 void addqueue(stack_t **head, int n);
 
-void f_queue(stack_t **head, unsigned int counter);
-void f_stack(stack_t **head, unsigned int counter);
+void *_queue(stack_t **head, unsigned int counter);
+void *_stack(stack_t **head, unsigned int counter);
 
 #endif
 
