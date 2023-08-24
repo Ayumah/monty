@@ -1,5 +1,11 @@
 #include "monty.h"
 
+void *_push(stack_t **head, unsigned int counter);
+void *_pall(stack_t **head, unsigned int counter);
+void *_pint(stack_t **head, unsigned int counter);
+void *_pop(stack_t **head, unsigned int counter);
+void *_swap(stack_t **head, unsigned int counter);
+
 /**
  * *_push - add node to the stack
  * @head: stack head
@@ -130,4 +136,3 @@ void *_swap(stack_t **head, unsigned int counter)
 	h->n = h->next->n;
 	h->next->n = aux;
 }
-
