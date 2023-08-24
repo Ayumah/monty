@@ -1,5 +1,5 @@
-#ifndef _MONTY_H_
-#define _MONTY_H_
+#ifndef MONTY_H
+#define MONTY_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -16,7 +16,7 @@
  * @next: points to the next element of the stack (or queue)
  *
  * Description: doubly linked list node structure
- * for stack, queues, LIFO, FIFO Holberton project
+ * for stack, queues, LIFO, FIFO
  */
 typedef struct stack_s
 {
@@ -41,7 +41,7 @@ typedef struct bus_s
 	int lifi;
 }  bus_t;
 
-extern bus_t bus;
+bus_t bus;
 
 /**
  * struct instruction_s - opcode and its function
@@ -49,7 +49,7 @@ extern bus_t bus;
  * @f: function to handle the opcode
  *
  * Description: opcode and its function
- * for stack, queues, LIFO, FIFO Holberton project
+ * for stack, queues, LIFO, FIFO 
  */
 typedef struct instruction_s
 {
@@ -59,6 +59,7 @@ typedef struct instruction_s
 
 char *_realloc(char *ptr, unsigned int old_size, unsigned int new_size);
 ssize_t getstdin(char **lineptr, int file);
+size_t getline (char **string, size_t *n, FILE *stream);
 char  *clean_line(char *content);
 void f_push(stack_t **head, unsigned int number);
 void f_pall(stack_t **head, unsigned int number);
@@ -82,5 +83,4 @@ void addqueue(stack_t **head, int n);
 void f_queue(stack_t **head, unsigned int counter);
 void f_stack(stack_t **head, unsigned int counter);
 
-#endif /* _MONTY_H_ */
-
+#endif
