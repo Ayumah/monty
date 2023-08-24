@@ -1,4 +1,4 @@
-#ifndef +\_MONTY_H_
+#ifndef _MONTY_H_
 #define _MONTY_H_
 
 #include <stdio.h>
@@ -92,5 +92,5 @@ void addqueue(stack_t **head, int n);
 void *_queue(stack_t **head, unsigned int counter);
 void *_stack(stack_t **head, unsigned int counter);
 
-#endif
+#endif /* _MONTY_H_ */
 
